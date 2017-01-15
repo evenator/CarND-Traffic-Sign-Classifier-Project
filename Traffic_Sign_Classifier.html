@@ -16996,7 +16996,7 @@ YYMdjizxAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>My model was able to correctly classify 4 out of 5 images (80%).</p>
+<p>My model was able to correctly classify 4 out of 5 images (80%). The image it failed on was the last image, which depicts a 20 KPH speed limit sign. The classifier mis-identified the sign as a 30 KPH speed limit sign, which is very similar in appearance. I suspect that the classification error is due to the skewed angle of the sign in the image, which may result in ambiguity between the "2" and "3" characters. Additionally, signs with this label are relatively scarce in the training dataset, so the network may not be adequately trained to recognize this type of sign.</p>
 
 </div>
 </div>
@@ -17126,7 +17126,7 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>My model was fairly uncertain on the first sign (the graffitied sign) and the last sign (the one it classified incorrectly). The last sign has the correct prediction as the number two choice, with a 25.4% probability.</p>
+<p>My model was fairly uncertain on the first sign (the graffitied sign) and the last sign (the one it classified incorrectly). The last sign has the correct prediction as the number two choice, with a 25.4% probability. As discussed above, this is probably due to the skewed angle of the sign and the relative paucity of training data for this type of sign.</p>
 
 </div>
 </div>
